@@ -18,3 +18,11 @@
 | Rapid         | ~75 ps        | 17–41 hours   | Daily   | 5 min     |
 | Final         | ~75 ps        | 12–18 days    | Weekly  | 30s       |
 
+
+## IGS GLONASS Satellite Ephemerides.
+| Type          | Accuracy      | Latency       | Updates | Interval  |
+| ------------  | ------------- | ------------- | ------- | --------  |
+| Broadcast     | ~5 ns         | real time     | N/A     | daily     |
+
+Orbit accuracies are 1D mean RMS values over the three XYZ geocentric components. IGS accuracy limits, except for predicted orbits, are based on comparisons with independent
+laser ranging results and discontinuities between consecutive days. The precision is better.
