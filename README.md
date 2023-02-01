@@ -19,10 +19,37 @@
 | Final         | ~75 ps        | 12–18 days    | Weekly  | 30s       |
 
 
-## IGS GLONASS Satellite Ephemerides.
+## IGS GLONASS Satellite Ephemerides
 | Type          | Accuracy      | Latency       | Updates | Interval  |
 | ------------  | ------------- | ------------- | ------- | --------  |
 | Broadcast     | ~5 ns         | real time     | N/A     | daily     |
 
 Orbit accuracies are 1D mean RMS values over the three XYZ geocentric components. IGS accuracy limits, except for predicted orbits, are based on comparisons with independent
 laser ranging results and discontinuities between consecutive days. The precision is better.
+
+
+## Geocentric Coordinates of IGS Tracking Stations
+| Type         |      | Accuracy | Latency | Updates | Sample Interval |
+|--------------|------|----------|---------|---------|-----------------|
+| Final positions | horizontal | 3 mm | 11–17 days | weekly | weekly |
+|               | vertical   | 6 mm | 11–17 days | weekly | weekly |
+| Final velocities | horizontal | 2 mm/yr | 11–17 days | weekly | weekly |
+|                 | vertical   | 3 mm/yr | 11–17 days | weekly | weekly |
+
+## IGS Earth Rotation Parameters.
+
+| Type                        | Accuracy   | Latency           | Updates  | Sample interval                                        |
+|----------------------------|------------|------------------|----------|-------------------------------------------------------|
+| Ultra-Rapid (p)            | PM         | 200 μas          | real time| daily integrations at 00, 06 12, 18 UTC, 4 times/day |
+|                            | PM rate    | 300 μas/day      |          |                                                       |
+|                            | LOD        | 50 μs            |          |                                                       |
+| Ultra-Rapid (o)            | PM         | 50 μas           | 3–9 hours| daily integrations at 00, 06, 12, 18 UTC, 4 times/day |
+|                            | PM rate    | 250 μas/day      |          |                                                       |
+|                            | LOD        | 10 μs            |          |                                                       |
+| Rapid                       | PM         | 40 μas           | 17–41 hours| daily integrations at 12 UTC, daily                  |
+|                            | PM rate    | 200 μas/day      |          |                                                       |
+|                            | LOD        | 10 μs            |          |                                                       |
+| Final                       | PM         | 30 μas           | 11–17 days| daily integrations at 12 UTC, weekly                  |
+|                            | PM rate    | 150 μas/day      |          |                                                       |
+|                            | LOD        | 10 μs            |          |                                                       |
+
