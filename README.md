@@ -54,3 +54,9 @@ laser ranging results and discontinuities between consecutive days. The precisio
 |                            | PM rate    | 150 μas/day      |          |                                                       |
 |                            | LOD        | 10 μs            |          |                                                       |
 
+## IGS Atmospheric parameters.
+| Type                                                     | Accuracy   | Latency   | Updates | Sample Interval                      |
+|----------------------------------------------------------|------------|-----------|---------|--------------------------------------|
+| Final tropospheric zenith path delay with N, E gradients | 4 mm (ZPD) | < 4 weeks | daily   | 5 minutes                            |
+| Final ionospheric TEC grid                               | 2–8 TECU   | ~11 days  | weekly  | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
+| Rapid ionospheric TEC grid                               | 2–9 TECU   | <24 hours | daily   | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
