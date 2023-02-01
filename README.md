@@ -1,6 +1,7 @@
 # An awesome list of useful GNSS tables
+In this document we collect tables which are useful for GNSS community.
 
-## International GNSS service Official Orbit and Clock Products
+## International GNSS service (IGS) Official Orbit and Clock Products
 | Type      | Accuracy   | Latency     | Updates   | Interval  |
 |-----------|------------|-------------|-----------|-----------|
 | Broadcast | ~100 cm    | real time   | N/A       | daily     |
