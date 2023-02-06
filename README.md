@@ -1,4 +1,4 @@
-# An awesome list of useful GNSS tables
+# Awesome list of useful GNSS tables
 In this document we collect tables which are useful for GNSS community.
 
 ## International GNSS service (IGS) Official Orbit and Clock Products
