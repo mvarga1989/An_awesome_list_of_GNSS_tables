@@ -1,5 +1,10 @@
 # Awesome list of useful GNSS tables
-In this document we collect tables which are useful for GNSS community.
+
+### You wish to assist in making the list more useful, complete and accurate? Please send me an [email](mailto:mvarga1989@gmail.com).
+
+### If my content has added any value to your work, please consider to give a star and/or share on your professional social networks. Thank you!
+
+In this document I collect tables which are useful for GNSS community.
 
 ## International GNSS service (IGS) Official Orbit and Clock Products
 | Type      | Accuracy   | Latency     | Updates   | Interval  |
@@ -60,3 +65,17 @@ laser ranging results and discontinuities between consecutive days. The precisio
 | Final tropospheric zenith path delay with N, E gradients | 4 mm (ZPD) | < 4 weeks | daily   | 5 minutes                            |
 | Final ionospheric TEC grid                               | 2–8 TECU   | ~11 days  | weekly  | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
 | Rapid ionospheric TEC grid                               | 2–9 TECU   | <24 hours | daily   | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
+
+## GPS/GNSS antennas
+
+| IGS Name            | Description                                                                                                          |   |   |   |   |   |   |   |   |
+|---------------------|----------------------------------------------------------------------------------------------------------------------|---|---|---|---|---|---|---|---|
+| TRM105000.10 NONE   | Zephyr 3 rover; switchable MSS filter in LNA; p/n 105000-10; L1/L2/L5/G1/G2/G3/E1/E2/E5ab/E6/BDS                     |   |   |   |   |   |   |   |   |
+| TRM115000.00 NONE   | Zephyr 3 Geodetic; switchable MSS filter in LNA; p/n 115000-00; L1/L2/L5/G1/G2/G3/E1/E2/E5ab/E6/BDS                  |   |   |   |   |   |   |   |   |
+| TRM115000.00 TZGD   | Zephyr 3 Geodetic; switchable MSS filter in LNA; p/n 115000-00; L1/L2/L5/G1/G2/G3/E1/E2/E5ab/E6/BDS                  |   |   |   |   |   |   |   |   |
+| TRM115000.00+S SCIT | Zephyr 3 Geodetic with SCIT spacer; switchable MSS filter in LNA; p/n 115000-00; L1/L2/L5/G1/G2/G3/E1/E2/E5ab/E6/BDS |   |   |   |   |   |   |   |   |
+| TRM115000.10 NONE   | Zephyr 3 base; switchable MSS filter in LNA; p/n 115000-10; L1/L2/L5/G1/G2/G3/E1/E2/E5ab/E6/BDS                      |   |   |   |   |   |   |   |   |
+| TRM126000.00 NONE   | Zephyr 3 Rugged                                                                                                      |   |   |   |   |   |   |   |   |
+| TRM14177.00 NONE    | 4000ST L1 Geodetic, Model 14177.00                                                                                   |   |   |   |   |   |   |   |   |
+| TRM14532.00 NONE    | 4000ST L1/L2 Geodetic, Model 14532.00                                                                                |   |   |   |   |   |   |   |   |
+| TRM14532.10 NONE    | 4000SSE Kin L1/L2, Model 14532.10                                                                                    |   |   |   |   |   |   |   |   |
