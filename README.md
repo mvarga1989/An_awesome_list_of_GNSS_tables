@@ -11,9 +11,6 @@
 
 - [Products required for GNSS data processing](#products-required-for-gnss-data-processing)
   * [Products distributed by different institutes](#products-distributed--by-different-institutes)
-    + [CDDIS](#cddis)
-    + [IGN](#ign)
-    + [WHU](#whu)
 - [International GNSS service (IGS) Official Orbit and Clock Products](#international-gnss-service-igs-official-orbit-and-clock-products)
 - [IGS Satellite Clocks](#igs-satellite-clocks)
 - [IGS GLONASS Satellite Ephemerides](#igs-glonass-satellite-ephemerides)
@@ -49,49 +46,6 @@ In this document I am collecting tables which are useful for GNSS community.
 
 ### Products distributed  by different institutes
 
-#### CDDIS
- -  IGS daily observation (30s) files 
- -  IGS hourly observation (30s) files 
- -  IGS high-rate observation (1s) files 
- -  MGEX daily observation (30s) files 
- -  MGEX hourly observation (30s) files 
- -  MGEX high-rate observation (1s) files 
- -  broadcast ephemeris files 
- -  IGS SP3 files 
- -  IGS CLK files 
- -  IGS EOP files 
- -  IGS weekly SINEX files 
- -  MGEX SP3 files 
- -  MGEX CLK files 
- -  MGEX ORBEX files 
- -  MGEX DSB files 
- -  MGEX OSB files 
- -  global ionosphere map (GIM) files 
- -  Rate of TEC index (ROTI) files 
- -  IGS final tropospheric product files 
-
-#### IGN
- -  IGS daily observation (30s) files 
- -  IGS hourly observation (30s) files 
- -  IGS high-rate observation (1s) files 
- -  MGEX daily observation (30s) files 
- -  MGEX hourly observation (30s) files 
- -  MGEX high-rate observation (1s) files 
- -  broadcast ephemeris files 
- -  IGS SP3 files 
- -  IGS CLK files 
- -  IGS EOP files 
- -  IGS weekly SINEX files 
- -  MGEX SP3 files 
- -  MGEX CLK files 
- -  MGEX ORBEX files 
- -  MGEX DSB files 
- -  MGEX OSB files 
- -  global ionosphere map (GIM) files 
- -  Rate of TEC index (ROTI) files 
- -  IGS final tropospheric product files 
- 
-#### WHU
  -  IGS daily observation (30s) files 
  -  IGS hourly observation (30s) files 
  -  IGS high-rate observation (1s) files 
