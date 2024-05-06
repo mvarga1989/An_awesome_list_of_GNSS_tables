@@ -4,6 +4,7 @@
 **If this content has added any value to your work, please consider giving it a :star: and/or share on your professional social networks. Thank you!**
 **Other useful lists that I maintain are available on this [:link:](https://github.com/mvarga1989#community-lists-that-i-maintain)**
 
+## Table of contents
 <!-- toc -->
 
 - [Products required for GNSS data processing](#products-required-for-gnss-data-processing)
