@@ -2,10 +2,113 @@
 
 #### You wish to assist in making the list more useful, complete and accurate? Contributors are more than welcome. Please send me an [:e-mail:](mailto:mvarga1989@gmail.com).
 #### If my content has added any value to your work, please consider giving it a :star: and/or share on your professional social networks. Thank you!
-#### Other useful lists that I am maintaining [lists link](https://github.com/mvarga1989#community-lists-that-i-am-maintaining)
+#### Other useful lists that I maintain are available on this [:link:](https://github.com/mvarga1989#community-lists-that-i-maintain)
 
-In this document I collect tables which are useful for GNSS community.
+<!-- toc -->
 
+- [Products required for GNSS data processing](#products-required-for-gnss-data-processing)
+  * [Products distributed by different institutes](#products-distributed--by-different-institutes)
+    + [CDDIS](#cddis)
+    + [IGN](#ign)
+    + [WHU](#whu)
+- [International GNSS service (IGS) Official Orbit and Clock Products](#international-gnss-service-igs-official-orbit-and-clock-products)
+- [IGS Satellite Clocks](#igs-satellite-clocks)
+- [IGS GLONASS Satellite Ephemerides](#igs-glonass-satellite-ephemerides)
+- [Geocentric Coordinates of IGS Tracking Stations](#geocentric-coordinates-of-igs-tracking-stations)
+- [IGS Earth Rotation Parameters.](#igs-earth-rotation-parameters)
+- [IGS Atmospheric parameters.](#igs-atmospheric-parameters)
+- [GPS/GNSS antennas](#gpsgnss-antennas)
+
+<!-- tocstop -->
+
+In this document I am collecting tables which are useful for GNSS community.
+
+## Products required for GNSS data processing
+- IGS daily, hourly, and high-rate observations with short file name (RINEX version 2.xx)
+- MGEX daily, hourly, and high-rate observations with long file name (RINEX version 3.xx)
+- IGS + MGEX (taking the union of IGS and MGEX, while the priority of MGEX sites is higher) daily, hourly, and high-rate observations
+- Curtin University of Technology (CUT) daily observations with long file name (RINEX v3.xx)
+- Hong Kong CORS 30s, 5s, and 1s observations with long file name (RINEX version v3.xx)
+- NGS/NOAA CORS daily observations with long file name (RINEX v3.xx)
+- EUREF Permanent Network (EPN) observations (long file name in RINEX v3.xx and short file name in RINEX v2.xx)
+- Plate Boundary Observatory (PBO) observations (long file name in RINEX v3.xx)
+- Various types of broadcast ephemeris, i.e., GPS- and GLONASS-only in RINEX v2.xx, mixed types in RINEX v3.xx and v4.xx for multiple-GNSS
+- Various types of IGS, MGEX, and other analysis center (AC) final, rapid, and ultra-rapid precise orbit and clock products, CNES real-time orbit and clock products in offline file format
+- Various types of IGS final and ultra-rapid earth rotation/orientation parameter (ERP/EOP)
+- ORBEX (ORBit EXchange format) products from five institutions, i.e., CODE, GFZ, GRG, WHU, and CNES
+- GPS and GLONASS differential code bias (DCB) products from CODE and multi-GNSS differential signal bias (DSB) products from CAS
+- Code observable-specific signal bias (OSB) products from six institutions, i.e., CAS, CODE, GFZ, GRG, WHU, and CNES
+- IGS weekly SINEX solutions
+- Various types of final, rapid, hourly rapid, 15-min rapid, 1-day and 2-day predicted global ionosphere map (GIM) products
+- Rate of TEC index (ROTI) products
+- CODE and IGS final tropospheric products
+- IGS ANTEX format antenna phase center corrections
+
+### Products distributed  by different institutes
+
+#### CDDIS
+ -  IGS daily observation (30s) files 
+ -  IGS hourly observation (30s) files 
+ -  IGS high-rate observation (1s) files 
+ -  MGEX daily observation (30s) files 
+ -  MGEX hourly observation (30s) files 
+ -  MGEX high-rate observation (1s) files 
+ -  broadcast ephemeris files 
+ -  IGS SP3 files 
+ -  IGS CLK files 
+ -  IGS EOP files 
+ -  IGS weekly SINEX files 
+ -  MGEX SP3 files 
+ -  MGEX CLK files 
+ -  MGEX ORBEX files 
+ -  MGEX DSB files 
+ -  MGEX OSB files 
+ -  global ionosphere map (GIM) files 
+ -  Rate of TEC index (ROTI) files 
+ -  IGS final tropospheric product files 
+
+#### IGN
+ -  IGS daily observation (30s) files 
+ -  IGS hourly observation (30s) files 
+ -  IGS high-rate observation (1s) files 
+ -  MGEX daily observation (30s) files 
+ -  MGEX hourly observation (30s) files 
+ -  MGEX high-rate observation (1s) files 
+ -  broadcast ephemeris files 
+ -  IGS SP3 files 
+ -  IGS CLK files 
+ -  IGS EOP files 
+ -  IGS weekly SINEX files 
+ -  MGEX SP3 files 
+ -  MGEX CLK files 
+ -  MGEX ORBEX files 
+ -  MGEX DSB files 
+ -  MGEX OSB files 
+ -  global ionosphere map (GIM) files 
+ -  Rate of TEC index (ROTI) files 
+ -  IGS final tropospheric product files 
+ 
+#### WHU
+ -  IGS daily observation (30s) files 
+ -  IGS hourly observation (30s) files 
+ -  IGS high-rate observation (1s) files 
+ -  MGEX daily observation (30s) files 
+ -  MGEX hourly observation (30s) files 
+ -  MGEX high-rate observation (1s) files 
+ -  broadcast ephemeris files 
+ -  IGS SP3 files 
+ -  IGS CLK files 
+ -  IGS EOP files 
+ -  IGS weekly SINEX files 
+ -  MGEX SP3 files 
+ -  MGEX CLK files 
+ -  MGEX ORBEX files 
+ -  MGEX DSB files 
+ -  MGEX OSB files 
+ -  global ionosphere map (GIM) files 
+ -  Rate of TEC index (ROTI) files 
+ -  IGS final tropospheric product files 
+ 
 ## International GNSS service (IGS) Official Orbit and Clock Products
 | Type      | Accuracy   | Latency     | Updates   | Interval  |
 |-----------|------------|-------------|-----------|-----------|
@@ -65,6 +168,10 @@ laser ranging results and discontinuities between consecutive days. The precisio
 | Final tropospheric zenith path delay with N, E gradients | 4 mm (ZPD) | < 4 weeks | daily   | 5 minutes                            |
 | Final ionospheric TEC grid                               | 2–8 TECU   | ~11 days  | weekly  | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
 | Rapid ionospheric TEC grid                               | 2–9 TECU   | <24 hours | daily   | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
+
+
+
+
 
 ## GPS/GNSS antennas
 
