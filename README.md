@@ -1,8 +1,8 @@
 # Awesome list of useful GNSS tables [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-#### You wish to assist in making the list more useful, complete and accurate? Contributors are more than welcome. Please send me an [:e-mail:](mailto:mvarga1989@gmail.com).
-#### If my content has added any value to your work, please consider giving it a :star: and/or share on your professional social networks. Thank you!
-#### Other useful lists that I maintain are available on this [:link:](https://github.com/mvarga1989#community-lists-that-i-maintain)
+**You wish to assist in making the list more useful, complete and accurate? Contributors are more than welcome. Please send me an [:e-mail:](mailto:mvarga1989@gmail.com).**
+**If this content has added any value to your work, please consider giving it a :star: and/or share on your professional social networks. Thank you!**
+**Other useful lists that I maintain are available on this [:link:](https://github.com/mvarga1989#community-lists-that-i-maintain)**
 
 <!-- toc -->
 
