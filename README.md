@@ -39,10 +39,10 @@ In this document I am collecting tables which are useful for GNSS community.
 | Clocks    | .clk    | RINEX clock    | station and satellite clocks, see here  |
 | Coordinates    | .crd    | Bernese    | station coordinates |
 | Earth rotation parameters    | .erp    | ERP    | IGSMAIL-1943 |
-| Ionosphere TEC    | .ion    | IONosphere EXchange (IONEX) format     | ionospheric TEC grid products |
+| Ionosphere TEC    | .ion    | IONosphere EXchange ([IONEX](https://files.igs.org/pub/data/format/ionex1.pdf)) format     | ionospheric TEC grid products |
 | Precise orbits    | .sp3, sp3c    | SP3, SP3c    | orbits |
 | Station positions    | .snx    | Software INdependent EXchange (SINEX) format    | station position and velocity solutions |
-| Tropospheric products    | .tro    | Tropo SINEX    | SINEX format for tropospheric and meteorological parameters |
+| Tropospheric products    | .tro    | [Tropo SINEX](https://files.igs.org/pub/data/format/sinex_tro_v2.00.pdf)    | SINEX format for tropospheric and meteorological parameters |
 
 
 - IGS daily, hourly, and high-rate observations with short file name (RINEX version 2.xx)
