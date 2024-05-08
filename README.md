@@ -24,12 +24,30 @@
 In this document I am collecting tables which are useful for GNSS community.
 
 ## Products required for GNSS data processing
+
+### GNSS Data and Product Holdings
+|  Name	Extension (RINEX v3 / v2)    | Format    | Description | 
+|  RINEX Met    | .MM.rnx / .yym    | RINEX    | RINEX meteorological files |
+|  RINEX Nav    | .[GREJCSM]N.rnx / .yy[ngp]    | RINEX    | RINEX navigation files |
+|  RINEX Obs    | .MO.crx / .yyd    | RINEX    | Hatanaka compressed RINEX observation files |
+|  RINEX skeleton    | .skl    | RINEX    | RINEX header skeleton file (unofficial!) |
+|  site log    | .log    | site log    | site/station description file incl. history |
+
+| Name    | Extension    | Format    | Description |
+| Clocks    | .clk    | RINEX clock    | station and satellite clocks, see here  |
+| Coordinates    | .crd    | Bernese    | station coordinates |
+| Earth rotation parameters    | .erp    | ERP    | IGSMAIL-1943 |
+| Ionosphere TEC    | .ion    | IONosphere EXchange (IONEX) format     | ionospheric TEC grid products |
+| Precise orbits    | .sp3, sp3c    | SP3, SP3c    | orbits |
+| Station positions    | .snx    | Software INdependent EXchange (SINEX) format    | station position and velocity solutions |
+| Tropospheric products    | .tro    | Tropo SINEX    | SINEX format for tropospheric and meteorological parameters |
+
+
 - IGS daily, hourly, and high-rate observations with short file name (RINEX version 2.xx)
 - MGEX daily, hourly, and high-rate observations with long file name (RINEX version 3.xx)
 - IGS + MGEX (taking the union of IGS and MGEX, while the priority of MGEX sites is higher) daily, hourly, and high-rate observations
-- Curtin University of Technology (CUT) daily observations with long file name (RINEX v3.xx)
-- Hong Kong CORS 30s, 5s, and 1s observations with long file name (RINEX version v3.xx)
-- NGS/NOAA CORS daily observations with long file name (RINEX v3.xx)
+- daily observations with long file name (RINEX v3.xx)
+- CORS 30s, 5s, and 1s observations with long file name (RINEX version v3.xx)
 - EUREF Permanent Network (EPN) observations (long file name in RINEX v3.xx and short file name in RINEX v2.xx)
 - Plate Boundary Observatory (PBO) observations (long file name in RINEX v3.xx)
 - Various types of broadcast ephemeris, i.e., GPS- and GLONASS-only in RINEX v2.xx, mixed types in RINEX v3.xx and v4.xx for multiple-GNSS
@@ -75,7 +93,7 @@ In this document I am collecting tables which are useful for GNSS community.
 | Rapid      | ~2.5 cm    | 17–41 hours | Daily     | 15 min    |
 | Final      | ~2.5 cm    | 12–18 days  | Weekly    | 15 min    |
 
-## IGS Satellite Clocks
+### IGS Satellite Clocks
 | Type          | Accuracy      | Latency       | Updates | Interval  |
 | ------------  | ------------- | ------------- | ------- | --------  |
 | Broadcast     | ~5 ns         | real time     | N/A     | daily     |
@@ -85,7 +103,7 @@ In this document I am collecting tables which are useful for GNSS community.
 | Final         | ~75 ps        | 12–18 days    | Weekly  | 30s       |
 
 
-## IGS GLONASS Satellite Ephemerides
+### IGS GLONASS Satellite Ephemerides
 | Type          | Accuracy      | Latency       | Updates | Interval  |
 | ------------  | ------------- | ------------- | ------- | --------  |
 | Broadcast     | ~5 ns         | real time     | N/A     | daily     |
@@ -94,7 +112,7 @@ Orbit accuracies are 1D mean RMS values over the three XYZ geocentric components
 laser ranging results and discontinuities between consecutive days. The precision is better.
 
 
-## Geocentric Coordinates of IGS Tracking Stations
+### Geocentric Coordinates of IGS Tracking Stations
 | Type         |      | Accuracy | Latency | Updates | Sample Interval |
 |--------------|------|----------|---------|---------|-----------------|
 | Final positions | horizontal | 3 mm | 11–17 days | weekly | weekly |
@@ -102,7 +120,7 @@ laser ranging results and discontinuities between consecutive days. The precisio
 | Final velocities | horizontal | 2 mm/yr | 11–17 days | weekly | weekly |
 |                 | vertical   | 3 mm/yr | 11–17 days | weekly | weekly |
 
-## IGS Earth Rotation Parameters.
+### IGS Earth Rotation Parameters.
 
 | Type                        | Accuracy   | Latency           | Updates  | Sample interval                                        |
 |----------------------------|------------|------------------|----------|-------------------------------------------------------|
@@ -119,16 +137,42 @@ laser ranging results and discontinuities between consecutive days. The precisio
 |                            | PM rate    | 150 μas/day      |          |                                                       |
 |                            | LOD        | 10 μs            |          |                                                       |
 
-## IGS Atmospheric parameters.
+### IGS Atmospheric parameters.
 | Type                                                     | Accuracy   | Latency   | Updates | Sample Interval                      |
 |----------------------------------------------------------|------------|-----------|---------|--------------------------------------|
 | Final tropospheric zenith path delay with N, E gradients | 4 mm (ZPD) | < 4 weeks | daily   | 5 minutes                            |
 | Final ionospheric TEC grid                               | 2–8 TECU   | ~11 days  | weekly  | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
 | Rapid ionospheric TEC grid                               | 2–9 TECU   | <24 hours | daily   | 2 hours; 5 deg (lon) x 2.5 deg (lat) |
 
+## International GNSS service Formats and Standards
 
-
-
+| Format/Standard    | Information    |  
+| SSR v1.0    | The IGS SSR format is an open standard for dissemination of real-time products to support the IGS Real-Time Service and the wider community. The messages support multi-GNSS and include corrections for orbits, clocks, DCBs, phase-biases and ionospheric delays. Extensions to also cover satellite attitude, phase center offsets and variations and group delay variations are planned in the near future. The goal is to create a self-contained and scalable standard for a wide range of real-time applications.    |  
+| RINEX v. 4.00    | RINEX 4.00 (2021) is a major revision of the format document to modernize the Navigation message files to be able to accommodate the new navigation messages from all the GNSS constellations, and system data messages such as; ionospheric corrections, earth orientation parameters and system time offsets. The Observation file format remains the same with some added QZSS signals and tracking codes to fully support the upcoming L1 C/B signal. The Meteo file format also remains the same. All RINEX file types also have new optional header lines to support FAIR data usage; Finding, Accessible, Interoperable and Reusable data.    |  
+| RINEX v. 3.05    | RINEX 3.05 (2020) is a major restructure and revision of the format document to make it clearer and easier to read, it adds BeiDou signals and tracking codes to fully support BDS-2 and BDS-3, and it also adds missing flags and values to the GLONASS navigation messages.    |  
+| RINEX v. 3.04    | The RINEX 3.04 release supports all publicly available signals from the US: GPS, Russia: GLONASS, Europe: Galileo, China: BeiDou, Japan: Quasi Zenith Satellite System (QZSS) and the Indian Regional Navigation Satellite System (IRNSS) constellations. RINEX 3.04 contains updates to support planned GLONASS CDMA signals, new BeiDou III and QZSS II signals. In addition to the new signals, the RINEX 3.04 text has been edited to improve the description of messages, fields and overall readability.    |  
+| RINEX v. 3.03    | August 2015 release notes    |  
+| RINEX v. 3.02    | Enhanced 3.01 to include: a new header message to specify the GLONASS code-phase bias; the existing GLONASS frequency to slot header message has been specified as mandatory and a new RINEX file naming convention    |  
+| RINEX v. 3.01    | GPS, GLONASS, Galileo, BeiDou (Compass), QZSS and SBAS, however, structure of the data record has changed significantly with the addition to detailed characterization of actual signal generation    |  
+| RINEX v. 2.11-A    | *Rinex 2.11 format definition addendum authorizing and encouraging the use of gzip compression as approved by the IGS-RTCM RINEX Working Group and the IGS Infrastructure Committee    |  
+| RINEX v. 2.11    | GPS, GLONASS and Galileo observations, meteorological data, and navigation files. Additionally, the C2, L2C/L5 and Galileo codes have also been introduced    |  
+| RINEX v. 2.10    | GPS and GLONASS observations, meteorological data, and navigation files    |  
+| GEO SBAS    | RINEX-type Exchange File for GEO SBAS Broadcast Data    |  
+| SINEX    | station position and velocity solutions    |  
+| Hatanaka compact RINEX    | GPS and GLONASS observations    |  
+| sp3 version d    | GNSS and SBAS orbit solutions    |  
+| sp3 version c    | GPS and GLONASS orbit solutions    |  
+| sp3 version a    | GPS and GLONASS orbit solutions (Discontinued January 2006)    |  
+| erp    | Earth rotation parameter files (Self-documented within)    |  
+| clock RINEX 3.04    | station and satellite clock solutions    |  
+| clock RINEX 3.02    | station and satellite clock solutions    |  
+| clock RINEX 3.00    | station and satellite clock solutions    |  
+| Bias-SINEX V1.00    | GNSS code and phase biases for satellites and stations    |  
+| IONEX V1.00    | ionospheric TEC grid products    |  
+| Tropo SINEX v2.00    | Solution (Software/Technique) Independent Exchange (SINEX) format for TROpospheric and meteorological parameters    |  
+| Tropo SINEX    | Zenith path delay products    |  
+| site log    | History of site installation    |  
+| ANTEX Format Description    | ANTEX: The Antenna Exchange Format, Version 1.4
 
 ## GPS/GNSS antennas
 
@@ -593,3 +637,8 @@ laser ranging results and discontinuities between consecutive days. The precisio
 |       TWIVP6000 NONE    |      VeraPhase 6000 with 35 dB LNA in flat housing, P/N 33-603500-xx-01-11, GPS L1/L2/L5, GLO G1/G2/G3, GAL E1/E5/E5a+b/E6, BDS B1/B2/B3, L-band corrections  | 
 |       TWIVP6050_CONE NONE    |      VeraPhase 6000 with 50 dB LNA in conical housing, P/N 33-605000-xx-01-01, GPS L1/L2/L5, GLO G1/G2/G3, GAL E1/E5/E5a+b/E6, BDS B1/B2/B3, L-band corrections  | 
 |       TWIVSP6037L NONE    |      VeroStar VSP6037L with 37 dB LNA, GPS/QZSS L1/L2/L5, GLONASS G1/G2/G3, Galileo E1/E5a/E5b/E6, BDS B1/ B2/B2a/B3, QZSS L6, NavIC L5, L-band corrections
+
+## Data sources
+
+- [IGS BKG](https://igs.bkg.bund.de/holdings#products)
+- [IGS Formats and standards](https://igs.org/formats-and-standards/)
