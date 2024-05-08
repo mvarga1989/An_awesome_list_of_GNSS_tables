@@ -28,11 +28,11 @@ In this document I am collecting tables which are useful for GNSS community.
 ### GNSS Data and Product Holdings
 |  Name |	Extension (RINEX v3 / v2)    | Format    | Description | 
 | ------------  | ------------- | ------------- | ------------- | 
-|  RINEX Met    | .MM.rnx / .yym    | RINEX    | RINEX meteorological files |
+|  RINEX Met    | .MM.rnx / .yym    | [RINEX](https://igs.org/formats-and-standards/)    | RINEX meteorological files |
 |  RINEX Nav    | .[GREJCSM]N.rnx / .yy[ngp]    | RINEX    | RINEX navigation files |
 |  RINEX Obs    | .MO.crx / .yyd    | RINEX    | Hatanaka compressed RINEX observation files |
 |  RINEX skeleton    | .skl    | RINEX    | RINEX header skeleton file (unofficial!) |
-|  site log    | .log    | site log    | site/station description file incl. history |
+|  site log    | .log    | [site log](https://files.igs.org/pub/station/general/blank.log)    | site/station description file incl. history |
 
 | Name    | Extension    | Format    | Description |
 | ------------  | ------------- | ------------- | ------------- | 
@@ -149,6 +149,7 @@ laser ranging results and discontinuities between consecutive days. The precisio
 ## International GNSS service Formats and Standards
 
 | Format/Standard    | Information    |  
+|-------------|-----------------------|
 | SSR v1.0    | The IGS SSR format is an open standard for dissemination of real-time products to support the IGS Real-Time Service and the wider community. The messages support multi-GNSS and include corrections for orbits, clocks, DCBs, phase-biases and ionospheric delays. Extensions to also cover satellite attitude, phase center offsets and variations and group delay variations are planned in the near future. The goal is to create a self-contained and scalable standard for a wide range of real-time applications.    |  
 | RINEX v. 4.00    | RINEX 4.00 (2021) is a major revision of the format document to modernize the Navigation message files to be able to accommodate the new navigation messages from all the GNSS constellations, and system data messages such as; ionospheric corrections, earth orientation parameters and system time offsets. The Observation file format remains the same with some added QZSS signals and tracking codes to fully support the upcoming L1 C/B signal. The Meteo file format also remains the same. All RINEX file types also have new optional header lines to support FAIR data usage; Finding, Accessible, Interoperable and Reusable data.    |  
 | RINEX v. 3.05    | RINEX 3.05 (2020) is a major restructure and revision of the format document to make it clearer and easier to read, it adds BeiDou signals and tracking codes to fully support BDS-2 and BDS-3, and it also adds missing flags and values to the GLONASS navigation messages.    |  
