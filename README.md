@@ -26,7 +26,8 @@ In this document I am collecting tables which are useful for GNSS community.
 ## Products required for GNSS data processing
 
 ### GNSS Data and Product Holdings
-|  Name	Extension (RINEX v3 / v2)    | Format    | Description | 
+|  Name |	Extension (RINEX v3 / v2)    | Format    | Description | 
+| ------------  | ------------- | ------------- | ------------- | 
 |  RINEX Met    | .MM.rnx / .yym    | RINEX    | RINEX meteorological files |
 |  RINEX Nav    | .[GREJCSM]N.rnx / .yy[ngp]    | RINEX    | RINEX navigation files |
 |  RINEX Obs    | .MO.crx / .yyd    | RINEX    | Hatanaka compressed RINEX observation files |
@@ -34,6 +35,7 @@ In this document I am collecting tables which are useful for GNSS community.
 |  site log    | .log    | site log    | site/station description file incl. history |
 
 | Name    | Extension    | Format    | Description |
+| ------------  | ------------- | ------------- | ------------- | 
 | Clocks    | .clk    | RINEX clock    | station and satellite clocks, see here  |
 | Coordinates    | .crd    | Bernese    | station coordinates |
 | Earth rotation parameters    | .erp    | ERP    | IGSMAIL-1943 |
